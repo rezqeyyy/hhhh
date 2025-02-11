@@ -12,10 +12,10 @@ new Vue({
           isOpen: false,
         },
         {
-          img1: "images/pngtree-coming-soon-flat-blue-png-image_6863531.png",
-          img2: "images/pngtree-coming-soon-flat-blue-png-image_6863531.png", 
-          img3: "images/pngtree-coming-soon-flat-blue-png-image_6863531.png",
-          title: "SOON",
+          img1: "images/WhatsApp Image 2025-02-11 at 22.53.14_acdf161b.jpg",
+          img2: "images/WhatsApp Image 2025-02-11 at 22.53.16_b61e10a8.jpg",
+          img3: "images/WhatsApp Image 2025-02-11 at 22.53.17_5d36e505.jpg",
+          title: "MAM AYAM",
           isOpen: false,
         },
         {
