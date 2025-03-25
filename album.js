@@ -33,10 +33,10 @@ new Vue({
           isOpen: false,
         },
         {
-          img1: "images\WhatsApp Image 2025-03-24 at 23.44.15_073e4d2e.jpg",
-          img2: "images\WhatsApp Image 2025-03-24 at 23.44.15_221a02a1.jpg",
-          img3: "images\WhatsApp Image 2025-03-24 at 23.44.21_e1b6a06e.jpg",
-          title: "Jalan-jalan",
+          img1: "images/WhatsApp Image 2025-03-24 at 23.44.15_073e4d2e.jpg",
+          img2: "images/WhatsApp Image 2025-03-24 at 23.44.15_221a02a1.jpg",
+          img3: "images/WhatsApp Image 2025-03-24 at 23.44.21_e1b6a06e.jpg",
+          title: "MAKAN MAKAN",
           isOpen: false,
         },
         {
