@@ -40,6 +40,20 @@ new Vue({
           isOpen: false,
         },
         {
+          img1: "images/blokm.jpg",
+          img2: "images/blokm2.jpg", 
+          img3: "images/blokm3.jpg",
+          title: "BLOK M KUNINGAN",
+          isOpen: false,
+        },
+        {
+          img1: "images/jumbo1.jpg",
+          img2: "images/jumbo2.jpg", 
+          img3: "images/jumbo3.jpg",
+          title: "MOVIE JUMBO",
+          isOpen: false,
+        },
+        {
           img1: "images/pngtree-coming-soon-flat-blue-png-image_6863531.png",
           img2: "images/pngtree-coming-soon-flat-blue-png-image_6863531.png", 
           img3: "images/pngtree-coming-soon-flat-blue-png-image_6863531.png",
