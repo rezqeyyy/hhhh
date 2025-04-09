@@ -9,7 +9,6 @@
     <title>Journey of Callys</title>
   </head>
   <body>
-    <!-- Tiktok herherykwan -->
     <div id="app">
       <div class="container">
         <div class="album" :class="{'album--open': isOpenedTop}">
@@ -28,6 +27,7 @@
             </div>
             <div class="album__page back" :style="{zIndex: 0}"></div>
           </div>
+
           <div
             class="album__paper"
             v-for="(page, idx) in items"
@@ -44,12 +44,25 @@
                   <img :src="page.img1" />
                   <div class="content__text">{{ idx + 1 }}</div>
                 </div>
-                <div class="content__img2"><img :src="page.img2" /></div>
-                <div class="content__img3"><img :src="page.img3" /></div>
+                <div class="content__img2">
+                  <img :src="page.img2" />
+                </div>
+                <div class="content__img3">
+                  <template v-if="page.img3.endsWith('.mp4')">
+                    <video controls width="100%">
+                      <source :src="page.img3" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  </template>
+                  <template v-else>
+                    <img :src="page.img3" />
+                  </template>
+                </div>
               </div>
             </div>
             <div class="album__page back" :style="{zIndex: idx + 1}"></div>
           </div>
+
           <div class="album__back"></div>
           <div class="album__bottom"></div>
           <div class="album__shadow"></div>

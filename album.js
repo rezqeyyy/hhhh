@@ -54,6 +54,13 @@ new Vue({
           isOpen: false,
         },
         {
+          img1: "images/ciscuit.jpg",
+          img2: "images/makanSS.jpg", 
+          img3: "images/makanSS2.jpg",
+          title: "MAKAN SS",
+          isOpen: false,
+        },
+        {
           img1: "images/pngtree-coming-soon-flat-blue-png-image_6863531.png",
           img2: "images/pngtree-coming-soon-flat-blue-png-image_6863531.png", 
           img3: "images/pngtree-coming-soon-flat-blue-png-image_6863531.png",

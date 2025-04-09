@@ -35,7 +35,6 @@ body {
   margin: auto;
   width: 600px;
   height: 700px;
-  transform: scale(0.5);
   cursor: pointer;
   position: relative;
 }
@@ -214,3 +213,4 @@ body {
     overflow: visible;
   }
 }
+
