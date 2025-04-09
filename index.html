@@ -6,9 +6,10 @@
     <link rel="stylesheet" href="album.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vuetify/2.3.0-beta.6/vuetify.min.js"></script>
-    <title>Journey of Callys</title>
+    <title>Journey of Us</title>
   </head>
   <body>
+    <!-- Tiktok herherykwan -->
     <div id="app">
       <div class="container">
         <div class="album" :class="{'album--open': isOpenedTop}">
@@ -19,15 +20,14 @@
             @click="topOpen(isOpenedTop)">
             <div
               class="album__page front"
-              :style="{transform: `translateZ(0.${items.length + 1}px)`}">
+              :style="{transform: `translateZ(${(items.length + 1) * 2}px)`}">
               <div>
                 <div class="album__top-title">Album</div>
-                <p class="txt-text">Journey of Callys</p>
+                <p class="txt-text">Journey of Us</p>
               </div>
             </div>
             <div class="album__page back" :style="{zIndex: 0}"></div>
           </div>
-
           <div
             class="album__paper"
             v-for="(page, idx) in items"
@@ -37,39 +37,26 @@
             @click="idx + 1 === items.length ? reset() : open(idx, page.isOpen)">
             <div
               class="album__page front"
-              :style="{transform: `translateZ(0.${items.length + 1 - (idx + 1)}px)`}">
+              :style="{transform: `translateZ(${(items.length + 1) * 2}px)`}">
               <div class="content">
                 <div class="content__title">{{ page.title }}</div>
                 <div class="content__img1">
                   <img :src="page.img1" />
                   <div class="content__text">{{ idx + 1 }}</div>
                 </div>
-                <div class="content__img2">
-                  <img :src="page.img2" />
-                </div>
-                <div class="content__img3">
-                  <template v-if="page.img3.endsWith('.mp4')">
-                    <video controls width="100%">
-                      <source :src="page.img3" type="video/mp4" />
-                      Your browser does not support the video tag.
-                    </video>
-                  </template>
-                  <template v-else>
-                    <img :src="page.img3" />
-                  </template>
-                </div>
+                <div class="content__img2"><img :src="page.img2" /></div>
+                <div class="content__img3"><img :src="page.img3" /></div>
               </div>
             </div>
             <div class="album__page back" :style="{zIndex: idx + 1}"></div>
           </div>
-
           <div class="album__back"></div>
           <div class="album__bottom"></div>
           <div class="album__shadow"></div>
         </div>
       </div>
     </div>
+    <audio src="music/bumibulan.mp3" autoplay loop hidden></audio>
     <script src="album.js"></script>
-    <audio src="music/bumibulan.mp3" autoplay hidden></audio>
   </body>
 </html>
